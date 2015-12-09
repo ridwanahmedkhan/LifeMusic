@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_camera">Start Camera</string>
+    <string name="choose_gallery">Open Gallery</string>
+    <string name="cannot">Cannot</string>
+    <string name="after_picture">Next</string>
+    <string name="show_sample">Show Sample</string>
+    <string name="skip_sample">Skip Sample</string>
+    <string name="title_activity_sample_graph">SampleGraphActivity</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="title_activity_plot">PlotActivity</string>
+    <string-array name="agerange_array">
+        <item>1 year</item>
+        <item>2 years</item>
+        <item>3 years</item>
+        <item>4 years</item>
+        <item>5 years</item>
+        <item>6 years</item>
+        <item>7 years</item>
+        <item>8 years</item>
+        <item>9 years</item>
+        <item>10 years</item>
+        <item>11 years</item>
+        <item>12 years</item>
+        <item>13 years</item>
+        <item>14 years</item>
+        <item>15 years</item>
+        <item>16 years</item>
+        <item>17 years</item>
+        <item>18 years</item>
+        <item>19 years</item>
+        <item>20 years</item>
+        <item>21 years</item>
+        <item>22 years</item>
+        <item>23 years</item>
+        <item>24 years</item>
+        <item>25 years</item>
+    </string-array>
+    <string name="title_activity_first">FirstActivity</string>
+</resources>

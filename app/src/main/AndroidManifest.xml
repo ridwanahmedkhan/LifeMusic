@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mycompany.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-feature
+            android:name="android.hardware.camera"
+            android:required="true" />
+
+        <uses-permission
+            android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+            android:maxSdkVersion="18" />
+        <uses-permission
+            android:name="android.permission.INTERNET"
+            android:required="true" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+        <uses-sdk
+            android:maxSdkVersion="23"
+            android:minSdkVersion="16"
+            android:targetSdkVersion="21" />
+
+
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".SampleGraphActivity"
+            android:label="@string/title_activity_sample_graph"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.myapplication.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GraphActivity"
+            android:label="@string/title_activity_graph"
+            android:parentActivityName=".SampleGraphActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.myapplication.SampleGraphActivity" />
+        </activity>
+        <activity
+            android:name=".PlotActivity"
+            android:label="@string/title_activity_plot"
+            android:parentActivityName=".GraphActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.mycompany.myapplication.GraphActivity" />
+        </activity>
+
+    </application>
+
+</manifest>
